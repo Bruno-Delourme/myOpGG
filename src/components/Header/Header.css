@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  z-index: 3;
+}
+
+.header.dark-mode {
+  background-color: white;
+  color: black;
+}
+
+logo img {
+  display: flex;
+  width: 10px;
+  height: auto;
+}
+
+.theme-switcher {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.fa-circle-half-stroke {
+  margin-right: 8px;
+}
