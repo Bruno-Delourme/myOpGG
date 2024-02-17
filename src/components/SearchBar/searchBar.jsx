@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./searchBar.css";
 import backgroundVideo from "../Vidéos/JAYCE_AND_GEM.mp4";
 import confirmationVideo from "../Vidéos/JAYCE_ARC_SOUND.mp4";
 
-function searchBar() {
+function SearchBar() {
   const [submit, setSubmit] = useState(false);
 
   const handleKeyDown = (event) => {
@@ -29,7 +29,8 @@ function searchBar() {
       )}
 
       <div className="search-container">
-        <input type="text" placeholder="summoner" onKeyDown={handleKeyDown} />
+        <input type="text" placeholder="Summoner" onKeyDown={handleKeyDown} />
+        <button className="search-button">Search</button>
         <select>
           <option value="euw">EUW</option>
           <option value="eun">EUN</option>
@@ -40,4 +41,4 @@ function searchBar() {
   );
 }
 
-export default searchBar;
+export default SearchBar;

@@ -1,5 +1,5 @@
-import React from "react";
-import SearchBar from "../SearchBar/searchBar.jsx";
+
+import SearchBar from "./src/components/SearchBar/searchBar"
 
 
 

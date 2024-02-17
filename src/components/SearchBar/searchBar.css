@@ -17,13 +17,26 @@
 
 .search-container {
   position: absolute;
-  top: 50%;
-  left: 55%;
+  top: 28.75%;
+  left: 65%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  width: 320px;
+  padding: 8px 15px;
+  font-size: 16px;
+  border: 2px solid #2c6075;
+  background-color: #081e24;
+  color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .search-container input,
 .search-container select {
   margin: 5px;
+  color: #243550;
+}
+
+.search-button:hover {
+  background-color: #567e39;
 }
