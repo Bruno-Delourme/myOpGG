@@ -1,0 +1,13 @@
+.header-banner {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #00000095;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  z-index: 2;
+  position: fixed;
+  font-size: 10px;
+  text-align: center;
+}

@@ -12,25 +12,24 @@ function SearchBar() {
     }
   };
 
+  const handleSearch = () => {
+    setSubmit(true);
+  };
+
   return (
     <div className="video-container">
       <video autoPlay loop muted className="backgroundVideo">
         <source src={backgroundVideo} type="video/mp4" />
       </video>
       {submit && (
-        <video
-          autoPlay
-          muted
-          onEnded={() => setSubmit(false)}
-          className="confirmationVideo"
-        >
+        <video autoPlay muted onEnded={() => setSubmit(false)} className="confirmationVideo">
           <source src={confirmationVideo} type="video/mp4" />
         </video>
       )}
 
       <div className="search-container">
         <input type="text" placeholder="Summoner" onKeyDown={handleKeyDown} />
-        <button className="search-button">Search</button>
+        <button onClick={handleSearch}>Search</button>
         <select>
           <option value="euw">EUW</option>
           <option value="eun">EUN</option>
