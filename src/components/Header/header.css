@@ -1,4 +1,11 @@
-.header-banner {
+@font-face {
+  font-family: "Beaufort";
+  src: url("../Fonts/BeaufortforLOL-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header-container {
   top: 0;
   left: 0;
   width: 100%;
@@ -9,6 +16,7 @@
   position: fixed;
   font-size: 10px;
   text-align: center;
+  padding: 0 20px;
   z-index: 2;
 }
 
@@ -16,15 +24,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
-  position: fixed;
-  padding: 0 10px;
+
   width: 100%;
+  font-family: "Beaufort", sans-serif;
 }
 
 .header-logo {
   height: 30px;
-  margin-right: auto;
 }
 
 .header-icon {
@@ -32,7 +38,16 @@
   font-size: 20px;
 }
 
+.icons-container {
+  display: flex;
+  justify-content: flex-end;
+  min-width: 60px;
+  padding-right: 10px;
+  flex-shrink: 0;
+}
+
 .header-title {
   flex-grow: 1;
+  display: flex;
   text-align: center;
 }

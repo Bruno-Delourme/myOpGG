@@ -1,4 +1,6 @@
 import './Footer.css';
+import '../Fonts/spiegel.ttf';
+
 
 const Footer = () => {
   return (
