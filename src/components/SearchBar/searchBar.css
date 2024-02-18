@@ -19,7 +19,7 @@
   top: 30%;
   left: 65%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 5;
   width: 350px;
   padding: 8px 15px;
   font-size: 16px;
@@ -34,6 +34,10 @@
 .search-container select {
   margin: 5px;
   color: #243550;
+}
+
+.search-container select{
+  height: 20px
 }
 
 .search-button:hover {
