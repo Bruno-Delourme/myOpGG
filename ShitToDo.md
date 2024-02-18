@@ -1,8 +1,7 @@
 # arcane 
 
-* ajouter le style de la nav, avec une bordure pour le cadre
-* ajouter le style du header
-* ajouter les uatres régions
+* agrandir la page pour un footer non visible
+* possibilité de scroll (mais scroll-hidden)
 
 # contacter Fortiche prod
 

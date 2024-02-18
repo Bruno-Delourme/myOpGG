@@ -2,12 +2,37 @@
   top: 0;
   left: 0;
   width: 100%;
+  padding: 0;
   background-color: #00000095;
   color: #fff;
-  padding: 5px;
   text-align: center;
-  z-index: 2;
   position: fixed;
   font-size: 10px;
+  text-align: center;
+  z-index: 2;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.header-logo {
+  height: 30px;
+  margin-right: auto;
+}
+
+.header-icon {
+  color: #fff;
+  font-size: 20px;
+}
+
+.header-title {
+  flex-grow: 1;
   text-align: center;
 }
