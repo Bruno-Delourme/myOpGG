@@ -1,11 +1,14 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
+
 import "./searchBar.css";
-import backgroundVideo from "../../assets/medias/videos/JAYCE_AND_GEM.mp4";
-import confirmationVideo from "../../assets/medias/videos/JAYCE_ARC_SOUND.mp4";
+import backgroundVideoJayce from "../../assets/medias/videos/JAYCE_AND_GEM.mp4";
+import confirmationVideoJayce from "../../assets/medias/videos/JAYCE_ARC_SOUND.mp4";
+import backgroundVideoJinx from "../../assets/medias/videos/Shyzo_Jinx_effect.mp4";
+import confirmationVideoJinx from "../../assets/medias/videos/Jinx_appears.mp4";
 
-function SearchBar() {
+const SearchBar = ({ bgMode }) => {
   const [submit, setSubmit] = useState(false);
-
   const handleKeyDown = (event) => {
     if (event.key === "Enter") {
       setSubmit(true);
@@ -15,19 +18,26 @@ function SearchBar() {
   const handleSearch = () => {
     setSubmit(true);
   };
+  // conditioning the video depending on mode
+  const backgroundValue =
+    bgMode === "jayce" ? backgroundVideoJayce : backgroundVideoJinx;
+  const backgroundValueClicked =
+    bgMode === "jayce" ? confirmationVideoJayce : confirmationVideoJinx;
 
   return (
     <div className="video-container">
-      <video autoPlay loop muted className="backgroundVideo">
-        <source src={backgroundVideo} type="video/mp4" />
+      <video key={bgMode} autoPlay loop muted className="backgroundVideo">
+        <source src={backgroundValue} type="video/mp4" />
       </video>
       {submit && (
         <video
+          // the key on video triggers rerender when value is changing
+          key={bgMode}
           autoPlay
           onEnded={() => setSubmit(false)}
           className="confirmationVideo"
         >
-          <source src={confirmationVideo} type="video/mp4" />
+          <source src={backgroundValueClicked} type="video/mp4" />
         </video>
       )}
 
@@ -46,6 +56,13 @@ function SearchBar() {
       </div>
     </div>
   );
-}
+};
+
+SearchBar.defaultProps = {
+  bgMode: "jayce",
+};
+SearchBar.propTypes = {
+  bgMode: PropTypes.oneOf(["jayce", "jinx"]),
+};
 
 export default SearchBar;
