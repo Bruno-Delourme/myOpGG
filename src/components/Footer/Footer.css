@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'spiegel';
-    src: url('../Fonts/spiegel.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "spiegel";
+  src: url("../../assets/fonts/spiegel.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 .footer-container {
   bottom: 0;
@@ -14,7 +14,7 @@
   z-index: 2;
   background-color: #0000006f;
   color: rgb(203, 203, 203);
-  font-family: 'spiegel', sans-serif;
+  font-family: "spiegel", sans-serif;
 }
 
 .footer {

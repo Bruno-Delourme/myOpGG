@@ -1,6 +1,5 @@
-import './Footer.css';
-import '../Fonts/spiegel.ttf';
-
+import "./Footer.css";
+import "../../assets/fonts/spiegel.ttf";
 
 const Footer = () => {
   return (
@@ -8,10 +7,14 @@ const Footer = () => {
       <div className="footer">
         <div id="footer-title">LoL.Searcher</div>
         <div>
-          <h4><a href="/about">About us</a></h4>
+          <h4>
+            <a href="/about">About us</a>
+          </h4>
         </div>
         <div>
-          <h4><a href="/contact">Contact</a></h4>
+          <h4>
+            <a href="/contact">Contact</a>
+          </h4>
         </div>
       </div>
     </div>

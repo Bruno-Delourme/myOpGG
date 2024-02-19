@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Beaufort";
-  src: url("../Fonts/BeaufortforLOL-Bold.ttf") format("truetype");
+  src: url("../../assets/fonts/BeaufortforLOL-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -47,7 +47,6 @@
   padding-right: 10px;
   flex-shrink: 0;
   padding: 15px;
-  
 }
 
 .header-title {
@@ -61,13 +60,15 @@
   color: #fffefe;
 }
 
-#idMusic:hover { /* au survol */
-  color: rgba(130, 127, 127, 0.849); 
+#idMusic:hover {
+  /* au survol */
+  color: rgba(130, 127, 127, 0.849);
 }
 
-#idMusic.muted:hover { /* Quand le son est désactivé */
-  color: #ccc; 
-} 
+#idMusic.muted:hover {
+  /* Quand le son est désactivé */
+  color: #ccc;
+}
 
 #idMode {
   padding-right: 10px;

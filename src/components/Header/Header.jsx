@@ -1,11 +1,10 @@
-import  { useState, useRef } from 'react';
+import { useState, useRef } from "react";
 import "./header.css";
-import "../Fonts/BeaufortforLOL-Bold.ttf";
-import logo from "../Img/lolWhiteLogo.png";
+import "../../assets/fonts/BeaufortforLOL-Bold.ttf";
+import logo from "../../assets/medias/image/lolWhiteLogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleHalfStroke, faMusic } from "@fortawesome/free-solid-svg-icons";
-import song from "../Vidéos/ambiance.mp4";
-
+import song from "../../assets/medias/videos/ambiance.mp4";
 
 const Header = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -17,7 +16,7 @@ const Header = () => {
     } else {
       audioRef.current.play();
     }
-    setIsPlaying(!isPlaying); 
+    setIsPlaying(!isPlaying);
   };
 
   return (
@@ -40,8 +39,8 @@ const Header = () => {
           />
         </div>
       </div>
-      
-      <video ref={audioRef} src={song} style={{ display: 'none' }}></video>
+
+      <video ref={audioRef} src={song} style={{ display: "none" }}></video>
     </header>
   );
 };
