@@ -10,9 +10,10 @@ import { faCircleHalfStroke, faMusic } from "@fortawesome/free-solid-svg-icons";
 import song from "../../assets/medias/videos/ambiance.mp4";
 
 const Header = ({ setBgMode }) => {
-  const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(null); // Référence pour la vidéo (utilisée ici uniquement pour le son)
 
+  const audioRef = useRef(null); // Référence pour la vidéo (utilisée ici uniquement pour le son)
+  const [isPlaying, setIsPlaying] = useState(false);
+  
   const toggleSound = () => {
     if (isPlaying) {
       audioRef.current.pause();
@@ -21,9 +22,11 @@ const Header = ({ setBgMode }) => {
     }
     setIsPlaying(!isPlaying);
   };
+
   const handleClick = () => {
     setBgMode((previousMode) => (previousMode === "jayce" ? "jinx" : "jayce"));
   };
+  
   return (
     <header className="header-container">
       <div className="header-content">

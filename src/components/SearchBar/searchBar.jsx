@@ -4,14 +4,13 @@ import "./searchBar.css";
 
 const SearchBar = ({ setSubmit }) => {
   const handleKeyDown = (event) => {
-    const letters = ["j", "i","n","x"];
+    const letters = ["j","i","n","x"];
     if (event.key === "Enter" || letters.includes(event.key.toLowerCase())) {
       setSubmit(true);
     }
   };
   
   
-
   const handleSearch = () => {
     setSubmit(true);
   };
