@@ -2,13 +2,15 @@ import PropTypes from "prop-types";
 
 import "./searchBar.css";
 
-// keep in mind a searchbar is just a searchbar and its purpose is not to be a background home screen
 const SearchBar = ({ setSubmit }) => {
   const handleKeyDown = (event) => {
-    if (event.key === "Enter") {
+    const letters = ["j", "i","n","x"];
+    if (event.key === "Enter" || letters.includes(event.key.toLowerCase())) {
       setSubmit(true);
     }
   };
+  
+  
 
   const handleSearch = () => {
     setSubmit(true);

@@ -4,8 +4,9 @@ import Header from "../components/Header/Header";
 import SearchBar from "../components/SearchBar/SearchBar";
 import backgroundVideoJayce from "../assets/medias/videos/JAYCE_AND_GEM.mp4";
 import confirmationVideoJayce from "../assets/medias/videos/JAYCE_ARC_SOUND.mp4";
-import backgroundVideoJinx from "../assets/medias/videos/Shyzo_Jinx_effect.mp4";
-import confirmationVideoJinx from "../assets/medias/videos/Jinx_appears.mp4";
+import backgroundVideoJinx from "../assets/medias/videos/Jinx.mp4";
+import confirmationVideoJinx from "../assets/medias/videos/Jinx_appears_VO2.mp4";
+import confirmationVideoJinxII from "../assets/medias/videos/Jinx_appears.mp4";
 
 export const HomeScreen = () => {
   // by default bgMode is set to jayce
