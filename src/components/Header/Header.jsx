@@ -11,7 +11,7 @@ import song from "../../assets/medias/videos/ambiance.mp4";
 
 const Header = ({ setBgMode }) => {
 
-  const audioRef = useRef(null); // Référence pour la vidéo (utilisée ici uniquement pour le son)
+  const audioRef = useRef(null); // Référence pour la vidéo (uniquement pour le son)
   const [isPlaying, setIsPlaying] = useState(false);
   
   const toggleSound = () => {
@@ -26,7 +26,7 @@ const Header = ({ setBgMode }) => {
   const handleClick = () => {
     setBgMode((previousMode) => (previousMode === "jayce" ? "jinx" : "jayce"));
   };
-  
+
   return (
     <header className="header-container">
       <div className="header-content">
