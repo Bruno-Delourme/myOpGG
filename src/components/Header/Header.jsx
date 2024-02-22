@@ -12,15 +12,15 @@ import song from "../../assets/medias/videos/ambiance.mp4";
 const Header = ({ setBgMode }) => {
 
   const audioRef = useRef(null); // Référence pour la vidéo (uniquement pour le son)
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isMusical, setIsMusical] = useState(false);
   
   const toggleSound = () => {
-    if (isPlaying) {
+    if (isMusical) {
       audioRef.current.pause();
     } else {
       audioRef.current.play();
     }
-    setIsPlaying(!isPlaying);
+    setIsMusical(!isMusical);
   };
 
   const handleClick = () => {
