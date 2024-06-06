@@ -87,22 +87,22 @@
 		{
 			"mimeType":"image/png",
 			"name":"Gemstone_LP_DefaultMaterial_Emissive.png",
-			"uri":"../Textures/Gemstone_LP_DefaultMaterial_Emissive.png"
+			"uri":"Gemstone_LP_DefaultMaterial_Emissive.png"
 		},
 		{
 			"mimeType":"image/png",
 			"name":"Gemstone_LP_DefaultMaterial_Normal.png",
-			"uri":"../Textures/Gemstone_LP_DefaultMaterial_Normal.png"
+			"uri":"Gemstone_LP_DefaultMaterial_Normal.png"
 		},
 		{
 			"mimeType":"image/png",
 			"name":"Gemstone_LP_DefaultMaterial_BaseColor.png",
-			"uri":"../Textures/Gemstone_LP_DefaultMaterial_BaseColor.png"
+			"uri":"Gemstone_LP_DefaultMaterial_BaseColor.png"
 		},
 		{
 			"mimeType":"image/png",
 			"name":"Gemstone_LP_DefaultMaterial_Roughness.png",
-			"uri":"../Textures/Gemstone_LP_DefaultMaterial_Roughness.png"
+			"uri":"Gemstone_LP_DefaultMaterial_Roughness.png"
 		}
 	],
 	"accessors":[
