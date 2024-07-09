@@ -21,7 +21,8 @@ const Objet3D = ({ position }) => {
     }
   });
 
-  return <primitive ref={ref} object={gltf.scene} position={position}/>;
+  return <primitive ref={ref} object={gltf.scene} position={position}/>
+  ;
 };
 
 export default Objet3D;
