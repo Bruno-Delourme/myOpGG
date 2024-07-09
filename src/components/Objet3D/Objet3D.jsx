@@ -5,14 +5,14 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 
 
-const Objet3D = () => {
+const Objet3D = ({ position }) => {
   const gltf = useLoader(GLTFLoader, '/objet3D/Gemstone_LP.gltf'); 
   const ref = useRef();
 
   useFrame(() => {
     if (ref.current) {
       // Animation de haut en bas
-      ref.current.position.y = Math.sin(Date.now() * 0.002) * 0.5;
+      ref.current.position.y = position[1] + Math.sin(Date.now() * 0.002) * 0.5;
 
       // Rotation aléatoire
       ref.current.rotation.x += Math.random() * 0.01;
@@ -21,7 +21,7 @@ const Objet3D = () => {
     }
   });
 
-  return <primitive ref={ref} object={gltf.scene} />;
+  return <primitive ref={ref} object={gltf.scene} position={position}/>;
 };
 
 export default Objet3D;
