@@ -1,20 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  
+  height: 100vh;
+}
+
 .video-container {
   position: relative;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
-  z-index: -10;
+   
 }
-.backgroundImage{
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  background-image: url('../assets/medias/image/jayce_Hextech0.jpg');
-  background-size: cover;
-  background-position: center; 
-  background-repeat: no-repeat; 
-  z-index: -1; /
+
+.backgroundVideo,
+.confirmationVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 
 .canvas {
@@ -23,20 +28,40 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0; /* Place le canvas devant l'image */
+  z-index: 2; /* Assurez-vous que la canvas a un z-index correct */
 }
 
 .content {
   position: relative;
-  z-index: 1; /* Place le contenu devant le canvas */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
+  z-index: 5; /* Assure que le contenu est au-dessus de la vidéo de fond */
 }
 
-.content > * {
-  margin: 10px; /* Espacement entre les éléments */
+.search-container {
+  position: absolute;
+  top: 25%; 
+  right: 5%; 
+  z-index: 10; 
+  width: 350px;
+  padding: 8px 15px;
+  font-size: 16px;
+  border: 2px solid #2c6075;
+  background-color: #081e24;
+  color: #ffffff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.search-container input,
+.search-container select {
+  margin: 5px;
+  color: #243550;
+}
+
+.search-container select {
+  height: 20px;
+}
+
+.search-button:hover {
+  background-color: #9c9f9a;
+  border-radius: 10%;
 }
