@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Canvas } from "@react-three/fiber";
 import Objet3D from "../components/Objet3D/Objet3D"; // chemin correct
@@ -89,7 +89,14 @@ export const HomeScreen = () => {
         <Canvas className="canvas">
           <ambientLight />
           <pointLight position={[10, 10, 10]} />
-          {bgMode === "jayce" && <Objet3D position={objectPosition} />}
+          {show3DObject && (
+            <Objet3D
+              position={objectPosition}
+              bloomIntensity={20.0} // Modifiez cette valeur
+              bloomThreshold={-1} // Modifiez cette valeur
+              bloomSmoothing={1} // Modifiez cette valeur
+            />
+          )}
         </Canvas>
         <SearchBar setSubmit={() => setSubmit(true)} />
         <div className="content">
@@ -100,3 +107,5 @@ export const HomeScreen = () => {
     </>
   );
 };
+
+export default HomeScreen;
