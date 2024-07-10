@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Canvas } from "@react-three/fiber";
-import Objet3D from "../components/Objet3D/Objet3D"; // chemin correct
+import Objet3D from "../components/Objet3D/Objet3D"; 
 import backgroundVideoJayce from "../assets/medias/videos/jayce_w_gem.mp4";
 import confirmationVideoJayce from "../assets/medias/videos/jayce_w_gem_arc.mp4";
 import backgroundVideoJinx from "../assets/medias/videos/Jinx_Fond.mp4";
 import confirmationVideoJinx from "../assets/medias/videos/Jinx_effect_01.mp4";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-import "./HomeScreen.css"; // Importation du fichier CSS combiné
+import "./HomeScreen.css"; 
 
 const SearchBar = ({ setSubmit }) => {
   const handleKeyDown = (event) => {
@@ -92,9 +92,9 @@ export const HomeScreen = () => {
           {show3DObject && (
             <Objet3D
               position={objectPosition}
-              bloomIntensity={20.0} // Modifiez cette valeur
-              bloomThreshold={-1} // Modifiez cette valeur
-              bloomSmoothing={1} // Modifiez cette valeur
+              bloomIntensity={100.0} // Aucun changement meme avec des valeurs extremes
+              bloomThreshold={-1} 
+              bloomSmoothing={1} 
             />
           )}
         </Canvas>
